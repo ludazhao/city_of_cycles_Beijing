@@ -1,0 +1,36 @@
+
+/* Main Body styles
+-------------------------------------------------- */
+
+#main_page{
+  	padding-top: 60px;
+  	padding-bottom: 20px;
+  	color:#001f3f;
+}
+
+#projects_page{
+	padding-top: 110px;
+	color:#001f3f;
+}
+
+#top-menu{
+	background-color: #001f3f;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+	padding-right: 22px;
+	background-color: #001f3f;
+}
+
+.navbar-nav li a{
+	padding-left: 22px;	
+}
+
+p,img {
+	margin-bottom: 20px;
+}
+
