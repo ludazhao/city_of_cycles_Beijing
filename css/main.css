@@ -35,10 +35,10 @@ p,img {
 }
 
 #ex1Slider .slider-selection {
-	background: #BABABA;
+  background: #BABABA;
 }
 
-p#cf7_controls {
+#cf7_controls {
   text-align:center;
 }
 #cf7_controls span {
@@ -67,8 +67,4 @@ p#cf7_controls {
   opacity:1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
-}
-
-#ex1Slider .slider-selection {
-	background: #BABABA;
 }

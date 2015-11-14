@@ -11,15 +11,37 @@ $(document).ready(function() {
   });
 });
 
-$('#ex1').slider({
-	formatter: function(value) {
-		return 'Current value: ' + value;
-	}
-});
+// $('#ex1').slider({
+// 	formatter: function(value) {
+// 		return 'Current value: ' + value;
+// 	}
+// });
 
-// Without JQuery
-var slider = new Slider('#ex1', {
-	formatter: function(value) {
-		return 'Current value: ' + value;
-	}
-});
+// // Without JQuery
+// var slider = new Slider('#ex1', {
+// 	formatter: function(value) {
+// 		return 'Current value: ' + value;
+// 	}
+// });
+
+
+  $(function() {
+    $( "#slider" ).slider({
+      value: 100,
+      min: 1400,
+      max: 2000,
+      step: 100,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value + "A.D. ");
+        
+      }
+    });
+    $( "#amount" ).val( $( "#slider" ).slider( "value" ) + "A.D. ");
+  });
+
+  // With JQuery
+// $('#ex1').slider({
+//   formatter: function(value) {
+//     return 'Current value: ' + value;
+//   }
+// });
