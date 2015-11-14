@@ -34,8 +34,9 @@ p,img {
 	margin-bottom: 20px;
 }
 
-#ex1Slider .slider-selection {
-  background: #BABABA;
+.pics {
+height: 150%;
+width: 150%;
 }
 
 #cf7_controls {
@@ -67,4 +68,13 @@ p,img {
   opacity:1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
+}
+
+#container_of_slider {
+  padding-top: 125px;
+  padding-left: 265px;
+}
+
+#slider {
+  width : 650px;
 }

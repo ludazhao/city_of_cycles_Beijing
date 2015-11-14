@@ -1,15 +1,15 @@
-$(document).ready(function() {
-  $("#cf7_controls").on('click', 'span', function() {
-    $("#cf7 img").removeClass("opaque");
+// $(document).ready(function() {
+//   $("#cf7_controls").on('click', 'span', function() {
+//     $("#cf7 img").removeClass("opaque");
 
-    var newImage = $(this).index();
+//     var newImage = $(this).index();
+//     console.log(newImage);
+//     $("#cf7 img").eq(newImage).addClass("opaque");
 
-    $("#cf7 img").eq(newImage).addClass("opaque");
-
-    $("#cf7_controls span").removeClass("selected");
-    $(this).addClass("selected");
-  });
-});
+//     $("#cf7_controls span").removeClass("selected");
+//     $(this).addClass("selected");
+//   });
+// });
 
 // $('#ex1').slider({
 // 	formatter: function(value) {
@@ -26,17 +26,26 @@ $(document).ready(function() {
 
 
   $(function() {
+
     $( "#slider" ).slider({
-      value: 100,
-      min: 1400,
-      max: 2000,
-      step: 100,
+      value: 0,
+      min: 0,
+      max: 3,
+      step: 1,
       slide: function( event, ui ) {
-        $( "#amount" ).val( ui.value + "A.D. ");
-        
+        $("#cf7 img").removeClass("opaque");
+
+        var newImage = ui.value;
+        console.log(newImage)
+        $("#cf7 img").eq(newImage).addClass("opaque");
+
+        $("#cf7_controls span").removeClass("selected");
+        $(this).addClass("selected");
+
+        $( "#amount" ).val( ui.value * 100 + 1400 + "A.D. ");
       }
     });
-    $( "#amount" ).val( $( "#slider" ).slider( "value" ) + "A.D. ");
+    $( "#amount" ).val( $( "#slider" ).slider( "value" )  * 100 + 1400  + "A.D. ");
   });
 
   // With JQuery
