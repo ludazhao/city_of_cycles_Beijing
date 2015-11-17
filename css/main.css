@@ -9,7 +9,7 @@
 }
 
 #projects_page{
-	padding-top: 110px;
+	padding-top: 50px;
 	color:#001f3f;
 }
 
@@ -34,6 +34,9 @@ p,img {
 	margin-bottom: 20px;
 }
 
+#map { 
+      height: 480px; 
+  }
 .pics {
 height: 150%;
 width: 150%;
@@ -48,9 +51,9 @@ width: 150%;
 }
 #cf7 {
   position:relative;
-  height:281px;
+  height:300px;
   width:450px;
-  margin:0 auto 10px;
+  margin:20px 0 10px 145px;
 }
 #cf7 img {
   position:absolute;
@@ -71,10 +74,12 @@ width: 150%;
 }
 
 #container_of_slider {
-  padding-top: 125px;
+  padding-top: 150px;
   padding-left: 265px;
 }
 
 #slider {
   width : 650px;
 }
+
+#modern-maps {height:100%;width:100%; }
