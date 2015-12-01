@@ -55,7 +55,21 @@
 
         $("#cf7_controls span").removeClass("selected");
         $(this).addClass("selected");
-
+        console.log("This is page " + ui.value);
+        
+        //This is where we struggled to change descriptions
+        $( "" ).hover(
+          function() {
+            $( this ).append( $( "<span> ***</span>" ) );
+          }, function() {
+            $( this ).find( "span:last" ).remove();
+          }
+        );
+        $("#desc"+oldImage).hide()
+        $("#desc"+newImage).show()
+        console.log(oldImage);
+        console.log(newImage);        
+        
         $( "#amount" ).val( ui.value * 50 + 1800 + "A.D. ");
       }
     });
