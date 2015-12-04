@@ -15,7 +15,8 @@
 
 .desc{
   padding-top: 50px; 
-  padding-left: 50px; 
+  padding-left: 50px;
+  padding-right: 35px; 
 }
 
 #top-menu{
@@ -45,8 +46,8 @@
 
 /*Slideshow styles */
 .pics {
-height: 150%;
-width: 150%;
+height: 175%;
+width: 175%;
 }
 
 
@@ -62,11 +63,11 @@ width: 150%;
 #cf7 {
   position:relative;
   height:300px;
-  width:450px;
-  margin:20px 0 10px 135px;
+  width:550px;
+  margin:20px 0px 0px 0px;
 }
 
-#cf7 img {
+img.maps {
   position:absolute;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -78,6 +79,67 @@ width: 150%;
   filter: alpha(opacity=0);
 }
 
+#grey {
+  opacity: 1;
+  z-index: -1;
+}
+
+#pic1 {
+  height: 75%;
+  width: 75%;
+  top: 20%;
+  left: 50%;
+}
+
+#pic2 {
+  width: 100%;
+  height: 125%;
+  top: 10%;
+  left: 35%;
+}
+
+#pic3 {
+  width: 100%;
+  height: 125%;
+  top: 10%;
+  left: 35%;
+}
+
+#pic4 {
+  width: 100%;
+  height: 125%;
+  top: 10%;
+  left: 35%; 
+}
+#pic5 {
+  width: 100%;
+  height: 125%;
+  top: 10%;
+  left: 35%; 
+}
+
+#pic6 {
+  width: 120%;
+  height: 150%;
+  top: 10%;
+  left: 26%; 
+}
+
+#pic7 {
+  width: 120%;
+  height: 150%;
+  top: 10%;
+  left: 26%; 
+}
+
+#pic8 {
+  width: 155%;
+  height: 160%;
+  top: 5%;
+  left: 10%; 
+}
+
+
 #cf7 img.opaque {
   opacity:1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -87,17 +149,17 @@ width: 150%;
 
 /*Slider Styles*/
 #container_of_slider {
-  padding-top: 150px;
-  padding-left: 265px;
+  position: absolute;
+  padding-left: 380px;
 }
 
 #slider {
-  width : 650px;
+  width : 700px;
 }
 
 /*Mapbox styles*/
 .leaflet-popup-content {
-  width:300px;
+
 }
 
 .leaflet-popup-content img {
@@ -121,12 +183,45 @@ width: 150%;
   padding:10px 20px; 
 }
 
-#circle1 {
-  display:none;
-  position:absolute;
-  left:710px;
-  top: 320px;
-  z-index: 9999;
+
+#help {
+    font-size: 20px;
+      position: absolute;
+    margin-left: 375px;
+    margin-top: 80px;
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.2;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.2;
+    }
+}
+
+#right_panel {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#historical-maps {
+  height: 570px;
 }
 
 
+
+#circle1 {
+  display:none;
+  position:absolute;
+  left:910px;
+  top: 180px;
+  z-index: 9999;
+}

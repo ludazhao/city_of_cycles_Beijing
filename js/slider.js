@@ -41,15 +41,13 @@
             $("#historical-maps").fadeToggle( "slow", function() {
                 $("#modern-maps").css('display','inline');
                 $("#container_of_slider").before($("#modern-maps"));
-                $("#container_of_slider").css('padding-top', '0px');
                 $( "#amount" ).val( "2015 A.D.(Now!)");
                 $("#blurb").show();
                 //$("#modern-maps").fadeToggle("slow", "linear");
             });
         } else if (oldImage == 9) {
             $("#modern-maps").css('display', "none");
-            $("#modern-maps").before($("#container_of_slider"));
-            $("#container_of_slider").css('padding-top', '140px');
+            $("#modern-maps").after($("#container_of_slider"));
             $("#historical-maps").fadeToggle( "slow");
             $("#blurb").hide();
 
@@ -71,10 +69,10 @@
        
         
         if (newImage === 0) {
-
+          $("#help").show();
           $("#amount").val(1300 + " A.D.")}
-        else if (newImage === 1){$("#amount").val(1573 + " A.D.")}
-        else if (newImage === 2){$("#amount").val(1700 + " A.D.")}
+        else if (newImage === 1){$("#amount").val(1573 + " A.D."); $("#help").hide();}
+        else if (newImage === 2){$("#amount").val(1700 + " A.D."); }
         else if (newImage === 3){$("#amount").val(1861 + " A.D.")}
         else if (newImage === 4){$("#amount").val(1900 + " A.D.")}
         else if (newImage === 5){$("#amount").val(1938 + " A.D.")}
@@ -85,14 +83,173 @@
     });
     $( "#amount" ).val( 1300 + " A.D. ");
   });
-        //Hovers
-        $("#link01").hover(
-          function() {
-            $("#circle1").show()
-          }, function() {
-            $("#circle1").hide()
-          }
-        );      
+//Hovers
+
+$("#link1").hover(
+  function() {
+    $("#circle1").show()
+  }, function() {
+    $("#circle1").hide()
+  }
+);  
+
+$("#link2").hover(
+  function() {
+    $("#circle2").show()
+  }, function() {
+    $("#circle2").hide()
+  }
+);  
+
+$("#link3").hover(
+  function() {
+    $("#circle3").show()
+  }, function() {
+    $("#circle3").hide()
+  }
+);  
+
+$("#link4").hover(
+  function() {
+    $("#circle4").show()
+  }, function() {
+    $("#circle4").hide()
+  }
+);  
+
+$("#link5").hover(
+  function() {
+    $("#circle5").show()
+  }, function() {
+    $("#circle5").hide()
+  }
+);  
+
+$("#link6").hover(
+  function() {
+    $("#circle6").show()
+  }, function() {
+    $("#circle6").hide()
+  }
+);  
+
+$("#link7").hover(
+  function() {
+    $("#circle7").show()
+  }, function() {
+    $("#circle7").hide()
+  }
+);  
+
+$("#link8").hover(
+  function() {
+    $("#circle8").show()
+  }, function() {
+    $("#circle8").hide()
+  }
+);  
+
+$("#link9").hover(
+  function() {
+    $("#circle9").show()
+  }, function() {
+    $("#circle9").hide()
+  }
+);  
+
+$("#link10").hover(
+  function() {
+    $("#circle10").show()
+  }, function() {
+    $("#circle10").hide()
+  }
+);  
+
+$("#link11").hover(
+  function() {
+    $("#circle11").show()
+  }, function() {
+    $("#circle11").hide()
+  }
+);  
+
+$("#link12").hover(
+  function() {
+    $("#circle12").show()
+  }, function() {
+    $("#circle12").hide()
+  }
+);  
+
+$("#link13").hover(
+  function() {
+    $("#circle13").show()
+  }, function() {
+    $("#circle13").hide()
+  }
+);  
+
+$("#link14").hover(
+  function() {
+    $("#circle14").show()
+  }, function() {
+    $("#circle14").hide()
+  }
+);  
+
+$("#link15").hover(
+  function() {
+    $("#circle15").show()
+  }, function() {
+    $("#circle15").hide()
+  }
+);  
+
+$("#link16").hover(
+  function() {
+    $("#circle16").show()
+  }, function() {
+    $("#circle16").hide()
+  }
+);  
+
+$("#link17").hover(
+  function() {
+    $("#circle17").show()
+  }, function() {
+    $("#circle17").hide()
+  }
+);  
+
+$("#link18").hover(
+  function() {
+    $("#circle18").show()
+  }, function() {
+    $("#circle18").hide()
+  }
+);  
+
+$("#link19").hover(
+  function() {
+    $("#circle19").show()
+  }, function() {
+    $("#circle19").hide()
+  }
+);  
+
+
+// for (var i =1; i < 20; i++) {
+//   $("#link" + toString(i)).hover(
+//     function() {
+//       $("#circle" + toString(i)).show()
+//     }, function() {
+//       $("#circle" + toString(i)).hide()
+//     }
+//   );  
+// }    
+
+
+
            // L.featureLayer(
            // {
            //     // this feature is in the GeoJSON format: see geojson.org
