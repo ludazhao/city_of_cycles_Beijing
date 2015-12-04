@@ -29,25 +29,47 @@
         <div class="row" id ="historical-maps">
             <div id="desc0" class="col-lg-2 desc">
                 Page 1 Description
+                </br>
                 <span id="link01"> This is a Thing! </span>
+                <svg id="circle1" height="100" width="100">
+                  <circle cx="50" cy="50" r="40" stroke="red" stroke-width="5" fill="none" />
+                </svg>
             </div>
             <div id="desc1" class="col-lg-2 desc" style="display:none;">
                 Page 2 Description
             </div>
+            <div id="desc2" class="col-lg-2 desc" style="display:none;">
+                Page 3 Description
+            </div>
+            <div id="desc3" class="col-lg-2 desc" style="display:none;">
+                Page 4 Description
+            </div>
+            <div id="desc4" class="col-lg-2 desc" style="display:none;">
+                Page 5 Description
+            </div>
+            <div id="desc5" class="col-lg-2 desc" style="display:none;">
+                Page 6 Description
+            </div>
+            <div id="desc6" class="col-lg-2 desc" style="display:none;">
+                Page 7 Description
+            </div>
+            <div id="desc7" class="col-lg-2 desc" style="display:none;">
+                Page 8 Description
+            </div>
+            <div id="desc8" class="col-lg-2 desc" style="display:none;">
+                Page 9 Description
+            </div>
             <div class="col-lg-10">
-
                 <div id="cf7" class="shadow" align="center">
-                    <!--                     <img class='opaque' src="images/1900.jpg" height="500" width="600"/>
-                    <img src="images/1936.jpg" height="500" width="500"/>
-                    <img src="images/1938.jpg" height="500" width="500"/>
-                    <img src="images/1952.jpg" height="500" width="500"/> -->
-                    <img class = "pics opaque" src="images/1900.jpg"/>
-                    <img class = "pics" src="images/1936.jpg"/>
+                    <img class = "pics opaque" src="images/1300.jpg"/>
+                    <img class = "pics" src="images/1573.jpg"/>
+                    <img class = "pics" src="images/1700.jpg"/>
+                    <img class = "pics" src="images/1861.jpg"/>
+                    <img class = "pics" src="images/1900.jpg"/>
                     <img class = "pics" src="images/1938.jpg"/>
                     <img class = "pics" src="images/1952.jpg"/>
-                    <img class = "pics" src="images/1936.jpg"/>
-                    <img class = "pics" src="images/1938.jpg"/>
-                    <img class = "pics" src="images/1952.jpg"/>
+                    <img class = "pics" src="images/1980.jpg"/>
+                    <img class = "pics" src="images/2005.jpg"/>
                 </div>
 
             </div>
@@ -58,14 +80,35 @@
             <label for="amount">Year:</label>
             <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
             </p>
-
+            <p id="blurb" style="display:none;"> Add your own transportation experience to the map above! </p> 
             <div id="slider">
 
             </div>
         </div>
         <div class= "row" id="modern-maps" style="opacity: 0.0">
             <div id="map">
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/ludazhao.oa0l9b1f/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibHVkYXpoYW8iLCJhIjoiY2loa3h6NWFpMDZrN3Rqajc0eWQ0NnUxZyJ9.80Gv5oagHmAae16mm2E00w'></iframe>
+                <button type="button" id="add_button" class="btn btn-primary">Add New Pins</button>
+                <div id="add_form_background" style="display:none;">
+                    <form id="add_form">
+                        <p>Add a description of your experience with transportation in Beijing! Fill out the form below(photos optional) and then click where on the map you would like to add your point.</p>
+                      <fieldset class="form-group">
+                        <label for="exampleInputEmail1">Title</label>
+                        <input type="email" class="form-control" id="form_title" placeholder="Enter Title">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <label for="exampleTextarea">Description</label>
+                        <textarea class="form-control" id="form_desc" rows="3"></textarea>
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <label for="exampleInputFile">Attach Photos</label>
+                        <input type="file" class="form-control-file" id="imgInp">
+                        <img id="blah" src="#" alt="your image" style="display:none;"/>
+                      </fieldset>
+                    </form>
+                </div>
+
+
+                <div>
             </div>
         </div>
         </body>

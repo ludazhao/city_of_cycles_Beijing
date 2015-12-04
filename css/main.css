@@ -43,8 +43,7 @@
   height: 480px; 
 }
 
-
-
+/*Slideshow styles */
 .pics {
 height: 150%;
 width: 150%;
@@ -94,5 +93,40 @@ width: 150%;
 
 #slider {
   width : 650px;
+}
+
+/*Mapbox styles*/
+.leaflet-popup-content {
+  width:300px;
+}
+
+.leaflet-popup-content img {
+  width:100%;
+}
+
+#add_button {
+  position: absolute;
+  z-index: 9999;
+  right: 1%;
+  top: 2.5%;
+}
+
+#add_form_background {
+  width: 400px;
+  position: absolute;
+  z-index: 9999;
+  right: 1%;
+  top: 13%; 
+  background-color: white;
+  padding:10px 20px; 
+}
+
+#circle1 {
+  display:none;
+  position:absolute;
+  left:710px;
+  top: 320px;
+  z-index: 9999;
+
 }
 
