@@ -225,3 +225,136 @@ img.maps {
   top: 180px;
   z-index: 9999;
 }
+
+#circle2 {
+  display:none;
+  position:absolute;
+  left:985px;
+  top: 350px;
+  z-index: 9999;
+}
+
+
+#circle3 {
+  display:none;
+  position:absolute;
+  left:910px;
+  top: 250px;
+  z-index: 9999;
+}
+
+#circle4 {
+  display:none;
+  position:absolute;
+  left:900px;
+  top: 100px;
+  z-index: 9999;
+}
+
+#circle6 {
+  display:none;
+  position:absolute;
+  left:850px;
+  top: 130px;
+  z-index: 9999;
+}
+
+#circle7 {
+  display:none;
+  position:absolute;
+  left:1050px;
+  top: 27px;
+  z-index: 9999;
+}
+
+
+#circle9 {
+  display:none;
+  position:absolute;
+  left:900px;
+  top: 230px;
+  z-index: 9999;
+}
+
+
+#circle10 {
+  display:none;
+  position:absolute;
+  left:1110px;
+  top: 246px;
+  z-index: 9999;
+}
+
+#circle11 {
+  display:none;
+  position:absolute;
+  left:850px;
+  top: 100px;
+  z-index: 9999;
+}
+
+#circle12 {
+  display:none;
+  position:absolute;
+  left:850px;
+  top: 114px;
+  z-index: 9999;
+}
+
+#circle13 {
+  display:none;
+  position:absolute;
+  left:920px;
+  top: 290px;
+  z-index: 9999;
+}
+
+#circle14 {
+  display:none;
+  position:absolute;
+  left:920px;
+  top: 290px;
+  z-index: 9999;
+}
+
+#circle15 {
+  display:none;
+  position:absolute;
+  left:690px;
+  top: 270px;
+  z-index: 9999;
+}
+
+#circle16 {
+  display:none;
+  position:absolute;
+  left:1040px;
+  top: 240px;
+  z-index: 9999;
+}
+
+#circle17 {
+  display:none;
+  position:absolute;
+  left:1080px;
+  top: 280px;
+  z-index: 9999;
+}
+
+
+#circle18 {
+  display:none;
+  position:absolute;
+  left:950px;
+  top: 90px;
+  z-index: 9999;
+}
+
+
+#circle19 {
+  display:none;
+  position:absolute;
+  left: 530px;
+  top: 250px;
+  z-index: 9999;
+}
